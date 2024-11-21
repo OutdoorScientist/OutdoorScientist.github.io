@@ -74,6 +74,10 @@ input, select, textarea {
 	padding-left: 4em;
 }
 
+.organize {
+	display: flex;
+}
+
 
 /* Basic */
 
@@ -201,6 +205,30 @@ input, select, textarea {
 		}
 
 			h1.major:after {
+				background-image: -moz-linear-gradient(to right,#004B66, #FFC759);
+				background-image: -webkit-linear-gradient(to right, #004B66, #FFC759);
+				background-image: -ms-linear-gradient(to right,#004B66, #FFC759);
+				background-image: linear-gradient(to right, #004B66, #FFC759);
+				-moz-transition: max-width 0.2s ease;
+				-webkit-transition: max-width 0.2s ease;
+				-ms-transition: max-width 0.2s ease;
+				transition: max-width 0.2s ease;
+				border-radius: 0.2em;
+				bottom: 0;
+				content: '';
+				height: 0.05em;
+				position: absolute;
+				right: 0;
+				width: 100%;
+			}
+
+	div.major {
+			margin: 0 0 1.3em 0;
+			position: relative;
+			padding-bottom: 0.35em;
+		}
+
+			div.major:after {
 				background-image: -moz-linear-gradient(to right,#004B66, #FFC759);
 				background-image: -webkit-linear-gradient(to right, #004B66, #FFC759);
 				background-image: -ms-linear-gradient(to right,#004B66, #FFC759);
