@@ -127,12 +127,12 @@ input, select, textarea {
 }
 
 /* Place the container to the right */
-.right {
+.timeline-right {
   left: 5%;
 }
 
 /* Add arrows to the right container (pointing left) */
-.right::before {
+.timeline-right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -146,7 +146,7 @@ input, select, textarea {
 }
 
 /* Fix the circle for containers on the right side */
-.right::after {
+.timeline-right::after {
   left: -12px;
 }
 
