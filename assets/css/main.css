@@ -84,8 +84,16 @@ input, select, textarea {
 	justify-content: center;
 }
 
-.larger-text {
-	font-size: xx-large;
+.image-container {
+	width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.image-container-div {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* My Timeline Classes */
