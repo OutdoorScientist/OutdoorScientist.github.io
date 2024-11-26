@@ -35,93 +35,75 @@
 					</div>
 					<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 					<p>
-						Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim
-						auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque
-						in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar
-						mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque
-						enim turpis, hendrerit tristique.
+						I built an ergonomic mouse using a Raspberry Pi Zero W to translate Xbox controller inputs into
+						binary mouse and keyboard commands, creating a universal HID device. This project taught me HID
+						communication, Python scripting, and automating tasks on boot.
+					</p>
+					<p>
+						I also developed Python scripts to scrape and consolidate website content, improving my skills
+						with BeautifulSoup, regular expressions, and task automation.
+					</p>
+					<p>
+						Additionally, I automated a medical receipt organizer using a Raspberry Pi 3B to scan and store
+						receipts with a single button press, deepening my knowledge of Raspberry Pi, terminal commands,
+						and printer integration on Linux.
 					</p>
 					<div class="timeline-content">
 						<h2>Custom Computer Mouse</h2>
 						<p>
-							I researched, designed, and begun construction of a heavy duty robotic arm capable of
-							picking up objects weighing 10 pounds or less across a lenght of 1.5 feet.
+							My wrist was hurting so I decided to build a personal, ergonomic computer mouse. I
+							successfully achieved by programming a raspberry pi zero W to be register as a human
+							interactive device (HID) when plugged into a computer. I was then able to connect an xbox
+							controller to the raspberry pi zero through bluetooth. Then I was able to capture the
+							inputs from the xbox controller and convert them into binary mouse and keyboard inputs. The
+							xbox mouse outputs were translated into mouse and keyboard computer inputs by the raspberry
+							pi. No additional software was needed on the host computer making it a universal device.
 						</p>
 						<ul>
-							<li>
-								Reviewed the basics and limitations of robotic arms, conventional and stepper motors,
-								servos, motor drivers, H-bridges, and learned to permantently wire up single-board
-								computers (i.e. Raspberry Pi).
-							</li>
-							<li>
-								Begun the construciton of a robotic arm driven by linear acutators, H-bridges, and
-								headless Raspberry Pi taking into consideration linear acutators duty cycles, weight
-								limits, and the Raspberry Pis GPIO constraints.
-							</li>
+							<li>Learned how human interactive devices communicate with a computer.</li>
+							<li>Learned the binary inputs for a keyboard and mouse.</li>
+							<li>Learned how to setup a raspberry pi to execute scripts on boot.</li>
+							<li>Learned how to setup a custom python library for shared functions.</li>
+							<li>Learned the difference between power cables and data cables.</li>
 						</ul>
 					</div>
 					<br />
 					<div class="timeline-content">
-						<h2>Web Scrapper</h2>
+						<h2>Web Scrappers</h2>
 						<p>
-							I researched, designed, and begun construction of a heavy duty robotic arm capable of
-							picking up objects weighing 10 pounds or less across a lenght of 1.5 feet.
+							I have come across a number of situations in which information is spread across multiple
+							websites that I determined would be better if it were all accumulated. Therefore, I built
+							python scripts that would load the website, extract the desired content, save the content to
+							a text file, and modify that document to highlight important information.
 						</p>
 						<ul>
 							<li>
-								Reviewed the basics and limitations of robotic arms, conventional and stepper motors,
-								servos, motor drivers, H-bridges, and learned to permantently wire up single-board
-								computers (i.e. Raspberry Pi).
+								Learned how to use BeautifulSoup, set python scripts to execute at particular times,
+								execute python scripts for certain durations, and handle exceptions.
 							</li>
-							<li>
-								Begun the construciton of a robotic arm driven by linear acutators, H-bridges, and
-								headless Raspberry Pi taking into consideration linear acutators duty cycles, weight
-								limits, and the Raspberry Pis GPIO constraints.
-							</li>
+							<li>Improved my Regular Expression use.</li>
 						</ul>
 					</div>
 					<br />
 					<div class="timeline-content">
-						<h2>Automation</h2>
+						<h2>Medical Receipt Manager</h2>
 						<p>
-							I researched, designed, and begun construction of a heavy duty robotic arm capable of
-							picking up objects weighing 10 pounds or less across a lenght of 1.5 feet.
+							I recently opened a Health Savings Account (HSA) which requires me to keep track of my
+							health related purchases in order to be reimbursed at a later date. I decided to
+							investigate ways I could automate the tracking of these receipts in order to better manage
+							everything. I ended up connecting a printer/scanner to a Raspberry Pi 3B in which I could
+							control the printer through terminal commands. Upon boot of the PI a python script is
+							executed that monitors a button input. With the push of this button, the scanner is
+							triggered, and the resultant scan is saved with an ascending filename to a hard drive.
 						</p>
 						<ul>
 							<li>
-								Reviewed the basics and limitations of robotic arms, conventional and stepper motors,
-								servos, motor drivers, H-bridges, and learned to permantently wire up single-board
-								computers (i.e. Raspberry Pi).
+								Learned more about the Raspbian OS, creating directories through terminal commands,
+								verifying directories exists, and accessing external storage from the terminal.
 							</li>
 							<li>
-								Begun the construciton of a robotic arm driven by linear acutators, H-bridges, and
-								headless Raspberry Pi taking into consideration linear acutators duty cycles, weight
-								limits, and the Raspberry Pis GPIO constraints.
-							</li>
-						</ul>
-					</div>
-					<br />
-					<div class="timeline-content">
-						<h2>Receipt Organizer</h2>
-						<p>
-							With the recent popularization of longboards, I decided to build my own electric longboard
-							and upgrade the batteries for another.
-						</p>
-						<ul>
-							<li>
-								Retrofitted an electric motor, belt drive assembly, and belt tensioner to a normal
-								longboard. Acheieved a speed of 7 miles per hour with interchangeable batteries. Decided
-								to not use in-wheel motors due to project budget.
-							</li>
-							<li>
-								Built custom battery packs for an elerctic longboard by thorughly researching batteries,
-								calculating voltage needs, spot welding lithium batteries in a series, attaching a
-								battery management system, ensuring comptability with regenerative braking, and updating
-								the input cable on the original board.
-							</li>
-							<li>
-								Deconstructed and fixed in-wheel electirc motors on a professional electric longboard.
+								Learned about the drivers of printers and the open source software to connect through
+								them on Linux.
 							</li>
 						</ul>
 					</div>
