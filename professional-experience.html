@@ -190,13 +190,7 @@
 								send me an email or contact me through
 								<a href="https://www.linkedin.com/in/nraggo/">LinkedIn</a>.
 							</p>
-							<form
-								action="mailto:nathan.raggo@gmail.com"
-								method="POST"
-								enctype="multipart/form-data"
-								name="EmailForm">
-								<button type="submit" value="Submit">Email Me</button>
-							</form>
+							<button onclick="emailMe()">Email Me</button>
 						</section>
 						<section>
 							<ul class="contact">
@@ -248,5 +242,10 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			function emailMe() {
+				window.location.href = "mailto:nathan.raggo@gmail.com";
+			}
+		</script>
 	</body>
 </html>
