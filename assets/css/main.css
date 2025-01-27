@@ -263,6 +263,10 @@ padding: 10px;
 margin: 0;
 }
 
+.section-content ul {
+	margin: 0;
+}
+
 .collapsible-section.open .section-content {
 display: block;
 }
