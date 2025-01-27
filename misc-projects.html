@@ -38,37 +38,63 @@
 					</div>
 					<span class="image fit"><img src="images/misc-cover-photo.jpeg" alt="" /></span>
 					<p>
-						I built an ergonomic mouse using a Raspberry Pi Zero W to translate Xbox controller inputs into
-						binary mouse and keyboard commands, creating a universal HID device. This project taught me HID
-						communication, Python scripting, and automating tasks on boot.
+						One of my passions outside of work is inventing and building things that combine various skills.
+						I have experience in woodworking, welding, electrical, and mechanical work, along with
+						experience in embedded systems, microprocessors, and programming. 
 					</p>
 					<p>
-						I also developed Python scripts to scrape and consolidate website content, improving my skills
-						with BeautifulSoup, regular expressions, and task automation.
+						These hobbies reflect
+						my professional approach as a software developer. They demonstrate my ability to break down
+						complex problems, learn new technologies quickly, and apply that knowledge creatively to build
+						solutions. I enjoy working across disciplines, which mirrors my ability to contribute to
+						multiple aspects of software development, from front-end work to technical problem-solving and
+						hardware integration.
 					</p>
-					<p>
-						Additionally, I automated a medical receipt organizer using a Raspberry Pi 3B to scan and store
-						receipts with a single button press, deepening my knowledge of Raspberry Pi, terminal commands,
-						and printer integration on Linux.
-					</p>
+
 					<div class="timeline-content">
-						<h2>Custom Computer Mouse</h2>
+						<h2>Custom Human Interactive Device (HID) Embedded System </h2>
+						<p>I created a custom ergonomic computer mouse to alleviate wrist pain.</p>
 						<p>
-							My wrist was hurting so I decided to build a personal, ergonomic computer mouse. I
-							successfully achieved by programming a raspberry pi zero W to be register as a human
-							interactive device (HID) when plugged into a computer. I was then able to connect an xbox
-							controller to the raspberry pi zero through bluetooth. Then I was able to capture the
-							inputs from the xbox controller and convert them into binary mouse and keyboard inputs. The
-							xbox mouse outputs were translated into mouse and keyboard computer inputs by the raspberry
-							pi. No additional software was needed on the host computer making it a universal device.
+							I programmed a Raspberry Pi Zero W to function as a human interface device (HID) when
+							connected to a computer. By pairing an Xbox controller with the Raspberry Pi via Bluetooth,
+							I captured its inputs and converted them into binary signals for mouse and keyboard actions.
+							This allowed the Xbox controller to operate as both a mouse and keyboard, with the Raspberry
+							Pi managing the conversion—no additional software required on the host computer. I mapped
+							the controller buttons to keyboard shortcuts and the joysticks to mouse movements.
 						</p>
+						<p>
+							This unique setup, with button-to-shortcut mapping and the lack of software dependency on
+							the host computer, distinguishes my project from other similar devices. The entire project
+							was developed using Python and shell scripts.
+						</p>
+						<p>During this project, I accomplished the following:</p>
 						<ul>
-							<li>Learned how human interactive devices communicate with a computer.</li>
-							<li>Learned the binary inputs for a keyboard and mouse.</li>
-							<li>Learned how to setup a raspberry pi to execute scripts on boot.</li>
-							<li>Learned how to setup a custom python library for shared functions.</li>
-							<li>Learned the difference between power cables and data cables.</li>
+							<li>
+								Developed a unique ergonomic mouse and keyboard system that functions universally
+								without requiring additional software on the host computer, utilizing Python, shell
+								scripting, binary Bluetooth descriptors, a Raspberry Pi Zero W, and an Xbox controller.
+							</li>
+							<li>
+								Gained an understanding of how human interface devices (HIDs) communicate with
+								computers.
+							</li>
+							<li>Learned how to interpret and use binary inputs for both keyboards and mice.</li>
+							<li>
+								Set up a Raspberry Pi to register as a HID on power up through automatic execution of
+								scripts.
+							</li>
+							<li>
+								Developed a custom Python library to remap all the outputs of an xbox controller into
+								mouse movements and keyboard inputs
+							</li>
+							<li>
+								Learned the distinction between power cables and data cables and their appropriate
+								applications.
+							</li>
 						</ul>
+						<div>
+							<p>Skills: Human Interactive Devices, Bluetooth, Embedded Systems, Raspberry Pi, Python</p>
+						</div>
 					</div>
 					<br />
 					<div class="timeline-content">
@@ -89,26 +115,37 @@
 					</div>
 					<br />
 					<div class="timeline-content">
-						<h2>Medical Receipt Manager</h2>
+						<h2>Medical Receipt Manager Embedded System </h2>
 						<p>
-							I recently opened a Health Savings Account (HSA) which requires me to keep track of my
-							health related purchases in order to be reimbursed at a later date. I decided to
-							investigate ways I could automate the tracking of these receipts in order to better manage
-							everything. I ended up connecting a printer/scanner to a Raspberry Pi 3B in which I could
-							control the printer through terminal commands. Upon boot of the PI a python script is
-							executed that monitors a button input. With the push of this button, the scanner is
-							triggered, and the resultant scan is saved with an ascending filename to a hard drive.
+							Automated the scanning and tracking of health-related receipts for efficient management and
+							future integration with a machine learning model.
+						</p>
+						<p>
+							I recently opened a Health Savings Account (HSA), which requires me to track my
+							health-related purchases for future reimbursement. To simplify this process, I decided to
+							automate the tracking of my receipts. I connected a printer/scanner to a Raspberry Pi 3B,
+							allowing me to control the device using terminal commands. Now, when the Raspberry Pi boots
+							up, a Bash script monitors the GPIO pins, and pressing an external button triggers the
+							scanner. The scanned file is automatically saved to a hard drive with a unique, ascending
+							filename. This setup makes it easy to store, manage, and track receipts for medical
+							purchases. Additionally, I plan to incorporate a machine learning model for image-to-text
+							extraction, which will populate a CSV file with relevant receipt data, further streamlining
+							the tracking process.
 						</p>
 						<ul>
 							<li>
-								Learned more about the Raspbian OS, creating directories through terminal commands,
-								verifying directories exists, and accessing external storage from the terminal.
+								Gained a deeper understanding of Linux operating systems and how to monitor GPIO pins.
 							</li>
 							<li>
-								Learned about the drivers of printers and the open source software to connect through
-								them on Linux.
+								Successfully created dynamically named and organized directories on external storage
+								devices through Bash scripts triggered on external physical button presses.
+							</li>
+							<li>
+								Gained knowledge on various printer drivers and open-source software to enable their
+								seamless integration with Linux operating systems.
 							</li>
 						</ul>
+						<p>Skills: Linux, Embedded Systems, GPIO, Raspberry Pi</p>
 					</div>
 				</div>
 			</section>

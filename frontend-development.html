@@ -50,34 +50,214 @@
 
 					<div>
 						<div class="timeline-content">
-							<h2>AVEVA CONNECT and AVEVA Insight</h2>
-							<ul>
-								<li>
-									Worked on AVEVA Insight and AVEVA CONNECT frontends in order to enable industrial
-									operations to visualize, monitor, compare, and modify their varying data structures
-									in real time.
-								</li>
-								<li>
-									My responsibilities included new feature implementations, refactoring, bug fixes,
-									demoing, testing, documentation, and application investigations.
-								</li>
-								<li>
-									Partnered with stakeholders, system architects, backend teams, quality assurance,
-									and application leads, fostering team building while implementing concise,
-									high-quality code into our repository.
-								</li>
-								<li>
-									Made significant code contributions via pull requests, fostering continuous
-									improvement and feature expansion with a forward-thinking approach.
-								</li>
-								<li>
-									Conducted detailed code reviews to uphold quality and promote team knowledge
-									sharing.
-								</li>
-							</ul>
+							<div class="timeline-header">
+								<h2>
+									<a href="https://www.aveva.com/en/solutions/connect/visualization/"
+										>AVEVA CONNECT Visualization</a
+									>
+								</h2>
+							</div>
+							<div class="timeline-header">
+								<h3>Software Developer</h3>
+								<div>Sep 2023 - Nov 2024</div>
+							</div>
+							<br />		
+							
+								<div class="image-gallery">
+									<div class="image-card-gallery">
+										<img src="portfolio-images/AuroraHomepageMain.png" alt="AVEVA Insight" class="small-image" />
+									</div>
+									<div class="image-card-gallery">
+										<img src="portfolio-images/Aurora-Applications.png" alt="AVEVA Insight" class="small-image" />
+									</div>
+									<div class="image-card-gallery">
+										<img src="portfolio-images/AVEVAContentList.JPG" alt="AVEVA Insight" class="small-image" />
+									</div>
+									<div class="image-card-gallery">
+										<img src="portfolio-images/AvevaDashboard.JPG" alt="AVEVA Insight" class="small-image" />
+									</div>
+								</div>
+
+							<div class="collapsible-section open">
+								<div class="section-header">
+									<h3>Description</h3><span class="icon-coll">(-)</span>
+								</div>
+								<div class="section-content">
+								  <p>AVEVA CONNECT Visualization is a service within the AVEVA Connect platform that allows
+									users to visually interact with and analyze data from various industrial sources in real
+									time. It provides powerful tools for creating customizable dashboards, charts, and
+									reports, helping users visualize performance metrics, KPIs, and trends across their
+									operations.</p>
+								</div>
+							</div>
+
+							<div class="collapsible-section">
+								<div class="section-header">
+									<h3>Key Contributions</h3><span class="icon-coll">(+)</span>
+								</div>
+								<div class="section-content">
+									<ul>
+										<li>
+											Visualization Homepage: Created the initial draft with mock data and implemented
+											tab-organized navigation cards with skeleton loaders, empty states, thumbnail
+											pictures, view counts, and favorites functionality. Added tabs for most recently
+											viewed and favorited navigation cards.
+										</li>
+										<li>
+											Content List Page: Separated the content list page into its own component, fixed
+											filtering bugs, added a horizontally scrolling carousel for recently created
+											content, and implemented favorite toggle buttons for content cards.
+										</li>
+										<li>
+											Miscellaneous: Removed unused services, disabled content creation actions on mobile,
+											added functionality to create new content from selected tags, and allowed dashboard
+											creation from selected content. Hid specific features behind feature flags.
+										</li>
+										<li>
+											Refactored the shared entity search component, fixed bugs, and improved accuracy and
+											functionality.
+										</li>
+										<li>
+											Set up mobile device identification services, added eslint rules, and improved
+											Cypress tests.
+										</li>
+										<li>
+											Implemented external sharing, created shared content cards, improved site loading
+											performance, and ensured list column sort persistence.
+										</li>
+										<li>
+											Hid items and features based on user permissions and device type, fixed critical
+											bugs, and improved Cypress testing.
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="collapsible-section open">
+								<div class="section-header">
+									<h3>Tools Used</h3><span class="icon-coll">(-)</span>
+								</div>
+								<div class="section-content">
+									<p>Angular, Typescript, Cypress, Jest, NodeJS, Azure, HTML, CSS</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<br />
+					<div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<h2><a href="https://www.aveva.com/en/products/insight/">AVEVA Insight</a></h2>
+							</div>
+							<div class="timeline-header">
+								<h3>Software Developer</h3>
+								<div>Aug 2022 - Nov 2024</div>
+							</div>
+							<br />							
+
+							<div class="image-gallery">
+								<div class="image-card-gallery">
+									<img src="portfolio-images/Aveva-Insight.png" alt="AVEVA Insight" class="small-image" />
+								</div>
+								<div class="image-card-gallery">
+									<img src="portfolio-images/Aveva-Insight-Alert-Page.png" alt="AVEVA Insight" class="small-image" />
+								</div>
+								<div class="image-card-gallery">
+									<img src="portfolio-images/Insight-mobile.png" alt="AVEVA Insight" class="small-image" />
+								</div>
+							</div>
+
+							<div class="collapsible-section open">
+								<div class="section-header">
+									<h3>Summary</h3><span class="icon-coll">(-)</span>
+								</div>
+								<div class="section-content">
+								  <p>A cloud-based industrial analytics platform</p>
+								</div>
+							</div>
+
+
+							<div class="collapsible-section open">
+								<div class="section-header">
+									<h3>Description</h3><span class="icon-coll">(-)</span>
+								</div>
+								<div class="section-content">
+								  <p>AVEVA Insight delivers actionable information and Artificial Intelligence capabilities
+									to help industrial teams improve asset reliability and operational performance.</p>
+								</div>
+							</div>
+
+							<div class="collapsible-section">
+								<div class="section-header">
+									<h3>Key Contributions</h3><span class="icon-coll">(+)</span>
+								</div>
+								<div class="section-content">
+									<ul>
+										<li>
+											New Alert Page: Implemented a new alert creation page, ensuring no RxJS data leaks,
+											Figma correctness, and uniformity across the site. Fixed an issue where inactive
+											alerts were being incorrectly shown on the active alert page.
+										</li>
+										<li>
+											Lists Pages: Reorganized sections, added content cards, and varied asset link access
+											based on permissions.
+										</li>
+										<li>
+											Dashboard View: Enhanced mobile dashboard functionality, varying content display,
+											actions, and controls based on device and user roles.
+										</li>
+										<li>
+											Content View Page: Integrated PowerBI and fixed bugs, removing timelines for mobile
+											devices.
+										</li>
+										<li>
+											Asset View Page: Fixed bugs, adjusted asset page permissions, and removed links
+											based on user roles.
+										</li>
+										<li>
+											Asset Types View Page: Created an Asset Tag Mappings tab with export functionality,
+											dynamically naming files from MongoDB data.
+										</li>
+										<li>
+											Miscellaneous Contributions: Corrected the logo, refactored the shared entity
+											search, improved performance, added new save functionality with auto-navigation, and
+											hid features behind feature flags.
+										</li>
+										<li>
+											Refactored the shared entity search, improved styling, accuracy, and functionality,
+											and fixed bugs.
+										</li>
+										<li>
+											Set up mobile device identification services, added eslint rules, and improved
+											Cypress tests.
+										</li>
+										<li>
+											Created shared content cards and improved site performance through caching and
+											optimizations.
+										</li>
+										<li>
+											Implemented list column sort persistence and hid items based on permissions and
+											device type.
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="collapsible-section open">
+								<div class="section-header">
+									<h3>Tools Used</h3><span class="icon-coll">(-)</span>
+								</div>
+								<div class="section-content">
+									<p>Angular, Typescript, Cypress, Jest, NodeJS, Azure, HTML, CSS</p>
+								</div>
+							</div>
+
 						</div>
 					</div>
 					<br />
+
 					<div class="timeline-content">
 						<h2>ELRC's Machine Learning SaaS</h2>
 						<ul>
@@ -148,5 +328,22 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			const collapsibleSections = document.querySelectorAll('.collapsible-section');
+
+			collapsibleSections.forEach(section => {
+			section.querySelector('.section-header').addEventListener('click', () => {
+				section.classList.toggle('open');
+				const icon = section.querySelector('.icon-coll');
+				if (section.classList.contains('open')) {
+					icon.textContent = '(-)';
+				} else {
+					icon.textContent = '(+)';
+				}
+			});
+			});
+		</script>
+		
+
 	</body>
 </html>
